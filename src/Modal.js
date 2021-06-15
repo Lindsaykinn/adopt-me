@@ -14,6 +14,7 @@ const Modal = ({ children }) => {
     return () => modalRoot.removeChild(elRef.current);
   }, []);
 
+  //below is basically doing the same thing as ReactDOM.render statement in App.js
   return createPortal(<div>{children}</div>, elRef.current);
 };
 
